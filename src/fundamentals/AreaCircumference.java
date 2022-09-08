@@ -1,4 +1,4 @@
-package fundaments;
+package fundamentals;
 //this exercise have a objective: calculate the circumference area.
 public class AreaCircumference {
     //Variables and Constant

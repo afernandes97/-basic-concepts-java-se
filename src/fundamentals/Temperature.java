@@ -1,4 +1,4 @@
-package fundaments;
+package fundamentals;
 //this exercise have a objective: convert fahrenheit to celsius
 public class Temperature {
     public static void main(String[] args) {

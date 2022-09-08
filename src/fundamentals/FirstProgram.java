@@ -1,4 +1,4 @@
-package fundaments;
+package fundamentals;
 
 public class FirstProgram {
     //TUDO COMEÇA A PARTIR DO MAIN

@@ -1,4 +1,4 @@
-package fundaments;
+package fundamentals;
 
 public class PointNotation {
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class PointNotation {
         String n = "Hello";
 
         n = n.concat(", have a")
-                .concat(" god day")
+                .concat(" good day")
                 .concat("!!!")
                 .toUpperCase();
 

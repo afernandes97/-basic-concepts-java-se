@@ -1,4 +1,4 @@
-package fundaments;
+package fundamentals;
 
 //to use a lot of java functions, need to be import for use.
 import javax.swing.*;
@@ -10,7 +10,7 @@ public class Imports {
         //Import referring a java.util.Date
         Date d = new Date();
 
-        System.out.println(text + " " + d + ", have a god day");
+        System.out.println(text + " " + d + ", have a good day");
         //Import referring a javax.swing.*
         //JButton button = new JButton();
     }

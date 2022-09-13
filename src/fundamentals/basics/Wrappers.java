@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.basics;
 
 public class Wrappers {
     public static void main(String[] args) {

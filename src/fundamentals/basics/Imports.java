@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.basics;
 
 //to use a lot of java functions, need to be import for use.
 import javax.swing.*;

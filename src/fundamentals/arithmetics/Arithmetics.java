@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.arithmetics;
 
 public class Arithmetics {
     public static void main(String[] args) {

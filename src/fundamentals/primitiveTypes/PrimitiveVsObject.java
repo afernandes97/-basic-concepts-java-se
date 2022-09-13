@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.primitiveTypes;
 
 public class PrimitiveVsObject {
     public static void main(String[] args) {

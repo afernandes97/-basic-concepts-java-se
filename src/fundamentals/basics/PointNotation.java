@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.basics;
 
 public class PointNotation {
     public static void main(String[] args) {

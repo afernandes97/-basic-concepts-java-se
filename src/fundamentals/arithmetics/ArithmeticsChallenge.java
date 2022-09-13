@@ -1,8 +1,8 @@
-package fundamentals;
+package fundamentals.arithmetics;
 
 public class ArithmeticsChallenge {
     public static void main(String[] args) {
-        
+
         double aPow = Math.pow(6 * (3+2),2);
         double aMultiply = 3*2;
 

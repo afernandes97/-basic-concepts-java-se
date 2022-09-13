@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.conversions;
 
 public class ConversionNumberToString {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.conversions;
 
 public class ConversionPrimitiveTypes {
     public static void main(String[] args) {

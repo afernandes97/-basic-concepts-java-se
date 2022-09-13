@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.primitiveTypes;
 
 public class PrimitiveTypes {
     public static void main(String[] args) {

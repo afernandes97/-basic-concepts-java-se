@@ -1,4 +1,4 @@
-package fundamentals;
+package fundamentals.conversions;
 
 import javax.swing.*;
 

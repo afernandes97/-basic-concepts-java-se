@@ -1,4 +1,4 @@
-package composition.entities.enums;
+package composition.enums;
 
 public enum WorkerLevel {
     JUNIOR,

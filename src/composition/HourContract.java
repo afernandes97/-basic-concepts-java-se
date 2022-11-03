@@ -1,4 +1,4 @@
-package composition.entities;
+package composition;
 
 import java.util.Date;
 
@@ -7,16 +7,19 @@ public class HourContract {
     private Double valuePerHour;
     private Integer hours;
 
+    //constructor without params
     public HourContract(){
 
     }
 
+    //constructor with params
     public HourContract(Date date, Double valuePerHour, Integer hours) {
         this.date = date;
         this.valuePerHour = valuePerHour;
         this.hours = hours;
     }
 
+    //getters and setters
     public Date getDate() {
         return date;
     }
@@ -40,6 +43,7 @@ public class HourContract {
     public void setHours(Integer hours) {
         this.hours = hours;
     }
+
 
     //methods
 

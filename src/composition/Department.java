@@ -1,4 +1,4 @@
-package composition.entities;
+package composition;
 
 public class Department {
     private String name;
@@ -12,6 +12,7 @@ public class Department {
         this.name = name;
     }
 
+    //getters and setters
     public String getName() {
         return name;
     }

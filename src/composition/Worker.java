@@ -1,6 +1,6 @@
-package composition.entities;
+package composition;
 
-import composition.entities.enums.WorkerLevel;
+import composition.enums.WorkerLevel;
 
 import java.util.ArrayList;
 import java.util.Calendar;

@@ -19,6 +19,7 @@ public class Order {
         this.status = status;
     }
 
+    //getters and setters
     public Integer getId() {
         return id;
     }

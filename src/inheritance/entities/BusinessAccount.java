@@ -29,7 +29,7 @@ public class BusinessAccount extends Account{
     //loan method, using super class method: deposit and verifying if amount is less than loanLimit
     public void loan(double amount){
         if(amount <= loanLimit){
-            deposit(amount);
+            balance += amount - 10.00;
         }
     }
 

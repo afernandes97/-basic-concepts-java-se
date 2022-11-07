@@ -33,5 +33,20 @@ public class Program {
             System.out.println("Update");
         }
 
+        //testing without override
+        Account withoutOverrideMethod = new Account(1001, "andre", 1000.0);
+        withoutOverrideMethod.withdraw(200.0);
+        System.out.println(withoutOverrideMethod.getBalance());
+
+        //testing override method in savingsAccount
+        Account overrideMethod = new SavingsAccount(1002, "julio", 1000.0, 0.02);
+        overrideMethod.withdraw(200.0);
+        System.out.println(overrideMethod.getBalance());
+
+        //testing override method in BusinessAccount
+        Account businessAccountOverride = new BusinessAccount(1002, "julio", 1000.0, 1000.0);
+        businessAccountOverride.withdraw(200.0);
+        System.out.println(businessAccountOverride.getBalance());
+
     }
 }

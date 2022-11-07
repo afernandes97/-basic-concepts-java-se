@@ -33,4 +33,11 @@ public class BusinessAccount extends Account{
         }
     }
 
+    //@override method, using father method and rewriting method
+    @Override
+    public void withdraw(double amount){
+        //using father method to withdraw and adding discount 2
+        super.withdraw(amount); //realizing withdraw using father method
+        balance -= 2.0;
+    }
 }

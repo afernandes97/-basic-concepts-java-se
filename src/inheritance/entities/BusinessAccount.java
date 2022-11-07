@@ -1,7 +1,7 @@
 package inheritance.entities;
 
-//inheritance: to use inheritance em you class to extend content another class. use a reserved word "extends" to inheritance another class
-public class BusinessAccount extends Account{
+//inheritance: to use inheritance em you class to extend content another class. use a reserved word "extends" to inheritance another class, and using 'final' to don't rewrite method
+public final class BusinessAccount extends Account{
     private Double loanLimit;
 
     public BusinessAccount(){

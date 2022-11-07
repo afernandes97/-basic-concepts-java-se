@@ -24,9 +24,9 @@ public class SavingsAccount extends Account{
         balance += balance * interestRate;
     }
 
-    //@override method, using father method and rewriting method
+    //@override method, using father method and rewriting method, and using 'final' to don't rewrite method (attributes of final type are analyzed in a way faster in execution time)
     @Override
-    public void withdraw(double amount){
+    public final void withdraw(double amount){
         balance -= amount;
     }
 }

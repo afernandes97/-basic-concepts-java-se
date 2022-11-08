@@ -1,8 +1,8 @@
-package inheritance.application;
+package inheritance.base.application;
 
-import inheritance.entities.Account;
-import inheritance.entities.BusinessAccount;
-import inheritance.entities.SavingsAccount;
+import inheritance.base.entities.Account;
+import inheritance.base.entities.BusinessAccount;
+import inheritance.base.entities.SavingsAccount;
 
 public class Program {
     public static void main(String[] args){

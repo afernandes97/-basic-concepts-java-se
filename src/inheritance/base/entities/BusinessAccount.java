@@ -1,4 +1,4 @@
-package inheritance.entities;
+package inheritance.base.entities;
 
 //inheritance: to use inheritance em you class to extend content another class. use a reserved word "extends" to inheritance another class, and using 'final' to don't rewrite method
 public final class BusinessAccount extends Account{

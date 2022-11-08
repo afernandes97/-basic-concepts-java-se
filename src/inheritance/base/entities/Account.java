@@ -1,4 +1,4 @@
-package inheritance.entities;
+package inheritance.base.entities;
 
 public class Account {
     private Integer number;

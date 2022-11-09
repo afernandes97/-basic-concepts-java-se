@@ -52,13 +52,12 @@ public class Reservation {
 
     @Override
     public String toString() {
-        return "Reservation{" +
-                "roomNumber=" + roomNumber +
-                ", checkIn=" + sdf.format(checkIn) +
-                ", checkOut=" + sdf.format(checkOut) +
+        return "Reservation: " +
+                "Room " + roomNumber +
+                ", check-In: " + sdf.format(checkIn) +
+                ", check-Out: " + sdf.format(checkOut) +
                 ", " +
                 duration() +
-                " nights" +
-                '}';
+                " nights" ;
     }
 }

@@ -5,6 +5,11 @@ import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args){
+        mainMethod();
+        System.out.println("End of program");
+    }
+
+    public static void mainMethod(){
         Scanner sc = new Scanner(System.in);
         Integer lengthVector = 0;
 
@@ -20,7 +25,7 @@ public class Program {
         }catch (InputMismatchException e){
             System.out.println("Please entry only numbers");
         }
-        System.out.println("End of program");
+
         sc.close();
     }
 }

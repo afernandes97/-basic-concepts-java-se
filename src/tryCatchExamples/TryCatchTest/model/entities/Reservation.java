@@ -48,7 +48,7 @@ public class Reservation {
     public String updateDate(Date checkIn, Date checkOut){
         Date now = new Date();
 
-        //wrong way validate using if
+        //wrong way validate using if and return string
         if(checkIn.before(now) || checkOut.before(now)){
             return "Reservation dates for update must be future";
         }

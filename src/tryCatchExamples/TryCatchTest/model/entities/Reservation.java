@@ -19,11 +19,11 @@ public class Reservation {
     }
 
     public Reservation(Integer roomNumber, Date checkIn, Date checkOut) throws DomainException{
-        this.roomNumber = roomNumber;
         if(!checkOut.after(checkIn)){
             //instantiate exception
             throw new DomainException("Check-out date must be after check-in date");
         }
+        this.roomNumber = roomNumber;
         this.checkIn = checkIn;
         this.checkOut = checkOut;
     }

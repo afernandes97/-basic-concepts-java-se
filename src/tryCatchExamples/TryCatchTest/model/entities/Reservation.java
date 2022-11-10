@@ -1,5 +1,7 @@
 package tryCatchExamples.TryCatchTest.model.entities;
 
+import tryCatchExamples.TryCatchTest.model.exceptions.DomainException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -16,8 +18,12 @@ public class Reservation {
 
     }
 
-    public Reservation(Integer roomNumber, Date checkIn, Date checkOut) {
+    public Reservation(Integer roomNumber, Date checkIn, Date checkOut) throws DomainException{
         this.roomNumber = roomNumber;
+        if(!checkOut.after(checkIn)){
+            //instantiate exception
+            throw new DomainException("Check-out date must be after check-in date");
+        }
         this.checkIn = checkIn;
         this.checkOut = checkOut;
     }
@@ -45,21 +51,23 @@ public class Reservation {
         return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
     }
 
-    public String updateDate(Date checkIn, Date checkOut){
+    //using throws DomainException to can launch personalized exception and the program treat this using try catch
+    public void updateDate(Date checkIn, Date checkOut) throws DomainException{
         Date now = new Date();
 
         //wrong way validate using if and return string
         if(checkIn.before(now) || checkOut.before(now)){
-            return "Reservation dates for update must be future";
+            //instantiate exception using personalized exception
+            throw new DomainException("Reservation dates for update must be future dates");
         }
         if(!checkOut.after(checkIn)){
-            return "Check-out date must be after check-in date";
+            //instantiate exception
+            throw new DomainException("Check-out date must be after check-in date");
         }
 
         this.checkIn = checkIn;
         this.checkOut = checkOut;
 
-        return "Update";
     }
 
     @Override

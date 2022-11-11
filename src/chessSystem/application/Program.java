@@ -2,14 +2,13 @@ package chessSystem.application;
 
 import chessSystem.boardgame.Board;
 import chessSystem.boardgame.Position;
+import chessSystem.chess.ChessMatch;
 
 public class Program {
     public static void main(String[] args){
-        //test: instantiate position
-        Position pos = new Position(3,5);
-        System.out.println(pos);
 
-        //test: instantiate chess board
-        Board board = new Board(8,8);
+        //instantiate chess match
+        ChessMatch chessMatch = new ChessMatch();
+        UI.printBoard(chessMatch.getPieces());
     }
 }
